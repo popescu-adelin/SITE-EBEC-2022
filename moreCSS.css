@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    background-image: url("bk_v3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: DePixel;
+}
+button {
+    height: 7vh;
+    width: 80vw;
+    background-color: indianred;
+    display: block;
+    border: solid black 2px;
+}
+button:hover {
+    background-color: aqua;
+}
+p {
+    margin-left: 2vh;
+}
+#hello {
+    height: 25vh;
+    width: 100vw;
+    display: inline-flex;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: DePixel;
+    font-size: xx-large;
+}
+#robo {
+    height: 100%;
+}
+#click {
+    display: block;
+    position: absolute;
+    bottom: 1vh;
+    right: 5vw;
+    font-size: 3vh;
+    font-weight: bold;
+}
+#menu1, #menu2 {
+    height: 40vh;
+    width: 80vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-around;
+    border: solid black 2px;
+    background-color: darkslategrey;
+    /* font-family: DePixel; */
+    font-size: 5vh;
+}
+.but {
+    font-family: DePixel;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.but:hover {
+    background-color: aqua;
+}
+#you {
+    width: 19vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}

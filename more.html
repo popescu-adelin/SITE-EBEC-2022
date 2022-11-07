@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="moreCSS.css" />
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/depixel?styles=131877");
+    </style>
+    <!-- <div id="hello">
+      <img id="robo" src="icon.png" alt="" />
+      <p>HELLO! WHAT DO YOU WANT TO KNOW?</p>
+      <button id="click">click</button>
+    </div> -->
+    <button id="hello">
+      <img id="robo" src="icon.png" alt="" />
+      <p>HELLO! WHAT DO YOU WANT TO KNOW?</p>
+      <p id="click">click</p>
+    </button>
+    <div id="menu1">
+      <button class="but" id="b1">TELL ME MORE ABOUT EBEC</button>
+      <button class="but" id="b2">WHAT DOES CASE STUDY MEAN?</button>
+      <button class="but" id="b3">WHAT DOES INOVATIVE DESIGN MEAN?</button>
+      <button class="but" id="b4">SCHEDULE</button>
+      <button class="but" id="next">NEXT -></button>
+      <!-- <img id="you" src="you.png" alt="" /> -->
+    </div>
+    <div id="menu2">
+      <button class="but" id="b5">WHO CREATED THIS EVENT</button>
+      <button class="but" id="b6">WHO ARE THE SPONSORS?</button>
+      <button class="but" id="b7">WHAT IS 3% PROGRAM</button>
+      <button class="but" id="b8">RETURN TO MAIN PAGE</button>
+      <button class="but" id="prev"><- PREVIOUS</button>
+      <!-- <img id="you" src="you.png" alt="" /> -->
+    </div>
+    <img id="you" src="you.png" alt="" />
+    <script>
+      menu1.style.display = "none";
+      menu2.style.display = "none";
+      you.style.display = "none";
+      hello.onclick = function () {
+        hello.style.display = "none";
+        menu1.style.display = "flex";
+        you.style.display = "initial";
+      };
+      next.onclick = function () {
+        menu1.style.display = "none";
+        menu2.style.display = "flex";
+      };
+      prev.onclick = function () {
+        menu1.style.display = "flex";
+        menu2.style.display = "none";
+      };
+      b8.onclick = function () {
+        location.href = "index.html";
+      };
+    </script>
+  </body>
+</html>

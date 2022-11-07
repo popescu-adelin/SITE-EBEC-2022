@@ -1,0 +1,73 @@
+body {
+    font-family: DePixel;
+}
+main {
+    background-image: url("wallpaperMP.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    /* background-position-y: -5vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.ut {
+    height: 10vh;
+    align-self: center;
+}
+.best {
+    height: 10vh;
+    align-self: center;
+    /* margin-top: -1.5vh; */
+}
+a {
+    /* height: 100%; */
+    align-self: center;
+    align-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+.buttonsMP {
+    width: 14vh;
+    height: 7vh;
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    background-image: url("normalButton.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding:0;
+}
+#play:hover, #about:hover, #exit:hover {
+    background-image: url("pushedButton.png");
+    background-position:center;
+    background-size:cover ;
+    height: 6.1vh;
+    margin-top: 0.9vh;
+}
+.goto {
+    height: 7vh;
+    margin-bottom: 3vh;
+    
+}
+@media (max-width:500px){
+    main {
+        background-image: url("wallpaperMPphone.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
