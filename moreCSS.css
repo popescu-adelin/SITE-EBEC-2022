@@ -1,75 +1,201 @@
 body {
     height: 100vh;
-    background-image: url("bk_v3.jpg");
+    width: 100vw;
+    /* background-image: url('boomerBECbk.png'); */
+    background-image: url('boomerBECbk.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* background-size: 80%; */
     margin: 0;
     font-family: DePixel;
-}
-button {
-    height: 7vh;
-    width: 80vw;
-    background-color: indianred;
-    display: block;
-    border: solid black 2px;
-}
-button:hover {
-    background-color: aqua;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 p {
-    margin-left: 2vh;
+    padding-left: 5vh;
 }
-#hello {
+#wdywtk {
+    padding: 4vh 1vh;
+    width: 100%;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    size: 3vh;
+}
+.hello, #begin {
     height: 25vh;
-    width: 100vw;
-    display: inline-flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
     padding: 0;
     position: absolute;
     bottom: 0;
     left: 0;
     font-family: DePixel;
     font-size: xx-large;
+    border: solid #d29a82 0.5vh;
+    box-sizing: content-box;
+    background-color: #3e465b;
+    /* box-sizing: content-box; */
 }
-#robo {
-    height: 100%;
+.response {
+    width: 100%;
+    height: 25vh;
+    background-image: url('noBkBorder.png');
+    background-repeat: no-repeat;
+    background-size: 100% 25vh;
+    /* background-size: 25vh; */
+    align-items: center;
+}
+#a4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.robo {
+    height: 25vh;
+    border-radius: 50%;
+    border: solid #d29a82 0.5vh;
 }
 #click {
     display: block;
     position: absolute;
-    bottom: 1vh;
+    bottom: 3vh;
     right: 5vw;
     font-size: 3vh;
     font-weight: bold;
 }
 #menu1, #menu2 {
     height: 40vh;
-    width: 80vw;
+    width: 100vw;
     position: absolute;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
+    left: 0;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
-    align-content: flex-end;
-    justify-content: space-around;
-    border: solid black 2px;
-    background-color: darkslategrey;
+    align-content: center;
+    justify-content: center;
+    border: solid #d29a82 0.5vh;
+    background-color: #3e465b   ;
     /* font-family: DePixel; */
     font-size: 5vh;
+    box-sizing:border-box;
+}
+
+#schedule {
+    height: 70vh;
+    background-image: url("schedule.png");
 }
 .but {
+    height: 7vh;
+    width: 100%;
     font-family: DePixel;
     font-size: 0.7em;
     font-weight: bold;
+    align-self: baseline;
+    border-radius: 30%;
 }
-.but:hover {
+.but:hover{
     background-color: aqua;
 }
-#you {
-    width: 19vw;
-    height: 40vh;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
+/* .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.you {
+    height: 80%;
+    /* position: absolute;
+    bottom: 5vh;
+    right: 2vh; */
+    border-radius: 50%;
+    border: #d29a82 solid 0.5vh;
+}
+.coreTeam {
+    width: 50%;
+    align-self: center;
+}
+p {
+    margin: 1vh 0;
+}
+@media (max-width:500px) {
+
+    #begin, .hello {
+        height: 20vh;
+        width: 97.5vw;
+        display: flex;
+        overflow:visible;
+        flex-direction: column;
+        position: absolute;
+        top: 70vh;
+        left: 1vw;
+        align-items: flex-start;
+        justify-content: flex-end;
+        box-sizing:border-box;
+
+    }
+    .robo {
+        position: absolute;
+        top: -20vh;
+    }
+    #wdywtk {
+        font-size: 2vh;
+        padding: 1vh 3vh;
+        font-weight: bold;
+    }
+    #click {
+        bottom: -0.5vh;
+        right: 4vh;
+        font-size: 2vh;
+    }
+    .response {
+        height: 12vh;
+        margin-bottom: 2vh;
+        width: 100%;
+        background-image: url("noBkBorder.png");
+        background-repeat: no-repeat;
+        background-size: 100% 10vh;
+    }
+    .but {
+        height: 8vh;
+        width: 99%;
+        font-size: 0.4em;
+        align-self: center;
+    }
+    #menu1, #menu2 {
+        height: 46vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        /* padding-top: 5vh; */
+    }
+    .stack {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .you {
+        height: 25vh;
+        align-self: flex-end;
+    }
+    /* .you {
+        height: 25vh;
+        width: 25vh;
+        position: absolute;
+        top: -20vh;
+        right: 1vh;
+    } */
+    #schedule {
+        background-image: url("phoneSchedule.png");
+        height: 60vh;
+        width: 90%;
+    }
 }

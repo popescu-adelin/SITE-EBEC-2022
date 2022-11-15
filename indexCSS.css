@@ -1,38 +1,46 @@
 body {
+    height: 100vh;
     font-family: DePixel;
+    background-color:#3e465b ;
 }
 main {
     background-image: url("wallpaperMP.png");
-    height: 100vh;
+    height: 90vh;
+    /* margin-top: 10vh; */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    /* background-position-y: -5vh; */
+    /* background-position-y: 10vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+    /* margin-bottom: 5vh; */
 }
-
 nav {
+    padding: 0;
     height: 10vh;
-    background-color: blue;
+}
+/* nav {
+    height: 10vh;
+    background-color: #3e465b;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     align-content: center;
-}
-.ut {
+} */
+/* .ut {
     height: 10vh;
     align-self: center;
 }
 .best {
     height: 10vh;
     align-self: center;
-    /* margin-top: -1.5vh; */
-}
+    /* margin-top: -1.5vh; 
+} 
+*/
 a {
     /* height: 100%; */
     align-self: center;
@@ -42,14 +50,14 @@ a {
 }
 .buttonsMP {
     width: 14vh;
-    height: 7vh;
+    height:7vh;
     font-size: 3vh;
     margin-bottom: 5vh;
     background-image: url("normalButton.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    padding:0;
+    padding: 0;
 }
 #play:hover, #about:hover, #exit:hover {
     background-image: url("pushedButton.png");
@@ -65,9 +73,15 @@ a {
 }
 @media (max-width:500px){
     main {
+        height: 92vh;
         background-image: url("wallpaperMPphone.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        padding-bottom: 10vh;
+        /* justify-content: center; */
+    }
+    nav {
+        height: 8vh;
     }
 }
