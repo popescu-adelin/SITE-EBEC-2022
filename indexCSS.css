@@ -58,6 +58,7 @@ a {
     background-size:cover;
     background-position: center;
     padding: 0;
+    text-decoration: black;
 }
 #play:hover, #about:hover, #exit:hover {
     background-image: url("pushedButton.png");

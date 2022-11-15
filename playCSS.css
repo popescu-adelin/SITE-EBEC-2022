@@ -6,6 +6,7 @@ body {
     background-image: url("bk_v3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #3e465b;
 }
 #ask {
     height: 30vh;

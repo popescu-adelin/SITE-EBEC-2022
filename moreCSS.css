@@ -11,6 +11,7 @@ body {
     font-family: DePixel;
     box-sizing: border-box;
     overflow: hidden;
+    background-color:#3e465b ;
 }
 p {
     padding-left: 5vh;
