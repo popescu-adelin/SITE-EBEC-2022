@@ -47,6 +47,10 @@ a {
     align-content: center;
     overflow: hidden;
     margin: 0;
+    color: black;
+}
+a:hover{
+    color:black;
 }
 .buttonsMP {
     width: 14vh;
